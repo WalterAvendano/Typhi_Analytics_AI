@@ -1,487 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Typhi Analytics AI — Software de Inteligencia Artificial & Fútbol Cuantitativo</title>
-  <meta name="description" content="Software de inteligencia artificial y análisis cuantitativo de fútbol en las 6 Grandes Ligas de Europa. 85.0% de efectividad global auditada.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Typhi Analytics AI: software de análisis cuantitativo para las 6 grandes ligas de Europa. Pronósticos congelados antes del partido y auditoría pública de resultados.">
+  <title>Typhi Analytics AI — Fútbol en números</title>
   <link rel="icon" type="image/png" href="assets/typhi_logo_transparent.png">
-  
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- TOP BANNER -->
-  <div class="top-banner">
-    <span class="badge">AUDITORÍA ACTIVA</span>
-    Rendimiento verificado en base de datos: <strong>85.0% de efectividad global</strong> en las 6 Grandes Ligas de Europa.
+  <div class="top-strip">
+    <strong>AUDITORÍA PÚBLICA</strong>
+    <span id="strip-text">Pronósticos congelados antes de cada partido y resueltos con el marcador oficial.</span>
   </div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="brand-link">
-        <img src="assets/typhi_logo_transparent.png" alt="Typhi Analytics Logo" class="brand-logo">
-        <div>
-          <div class="brand-title">TYPHI <span>ANALYTICS</span></div>
-          <span class="brand-tag">QUANTITATIVE SOCCER AI</span>
-        </div>
+  <header class="site-header" id="inicio">
+    <div class="site-width header-inner">
+      <a class="brand" href="#inicio" aria-label="Typhi Analytics, inicio">
+        <img class="brand-logo" src="assets/typhi_logo_transparent.png" alt="">
+        <span><span class="brand-name">TYPHI <em>ANALYTICS</em></span><span class="brand-sub">Quantitative Soccer AI</span></span>
       </a>
-
-      <ul class="nav-links">
-        <li><a href="#algoritmo">El Algoritmo</a></li>
-        <li><a href="#fijos">Los 2 Fijos</a></li>
-        <li><a href="#parlay">Trío de Oro</a></li>
-        <li><a href="#auditoria">Resultados Auditados</a></li>
-        <li><a href="#reglas">Reglas de Oro</a></li>
-      </ul>
-
-      <!-- WhatsApp Channel Link placeholder (Paso 3.4) -->
-      <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" class="btn btn-whatsapp" id="nav-whatsapp-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.392-12.416c-5.514 0-10 4.486-10 10 0 1.764.457 3.425 1.258 4.881l-1.332 4.869 4.996-1.31c1.401.763 2.999 1.196 4.697 1.197 5.514 0 10-4.486 10-10 0-5.514-4.486-10-10-10z"/>
-        </svg>
-        Canal de WhatsApp (Gratis)
-      </a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#metodologia">Metodología</a>
+        <a href="#pronosticos">Jugadas del día</a>
+        <a href="#auditoria">Auditoría</a>
+        <a href="#reglas">Reglas de oro</a>
+        <a href="#vip">Club VIP</a>
+      </nav>
+      <a class="btn btn-green header-action" href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">Canal de WhatsApp gratis ↗</a>
+      <button id="menu-toggle" class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">☰</button>
     </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-badge">
-      ⚡ Inteligencia Artificial & Métodos Cuantitativos
-    </div>
-    <h1 class="hero-title">
-      Fútbol en Números: Decisiones con <span class="gradient-text">Ventaja Matemática</span>, Cero Corazonadas.
-    </h1>
-    <p class="hero-desc">
-      Procesamos goles esperados (xG), solvencia defensiva y diferenciales de probabilidad en las <strong>6 Grandes Ligas de Europa</strong>. Recibe diariamente pronósticos matemáticos congelados en base de datos antes de cada pitazo inicial.
-    </p>
-    <div class="hero-ctas">
-      <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" class="btn btn-whatsapp btn-lg">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.392-12.416c-5.514 0-10 4.486-10 10 0 1.764.457 3.425 1.258 4.881l-1.332 4.869 4.996-1.31c1.401.763 2.999 1.196 4.697 1.197 5.514 0 10-4.486 10-10 0-5.514-4.486-10-10-10z"/>
-        </svg>
-        Unirme al Canal de WhatsApp (Gratis)
-      </a>
-      <a href="#auditoria" class="btn btn-secondary btn-lg">
-        📊 Ver Resultados Auditados
-      </a>
-    </div>
-    <div class="hero-trust">
-      <div class="hero-trust-item">
-        <span>🔒</span> Pronósticos inmutables y congelados antes del inicio
-      </div>
-      <div class="hero-trust-item">
-        <span>🛡️</span> Regla estricta de gestión de banca (2% a 5%)
-      </div>
-      <div class="hero-trust-item">
-        <span>📈</span> 1 sola jugada de máxima probabilidad por partido
-      </div>
-    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil" hidden>
+      <a href="#metodologia">Metodología</a>
+      <a href="#pronosticos">Jugadas del día</a>
+      <a href="#auditoria">Auditoría</a>
+      <a href="#reglas">Reglas de oro</a>
+      <a href="#vip">Club VIP</a>
+      <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">Canal de WhatsApp ↗</a>
+    </nav>
   </header>
 
-  <!-- STATS BAR -->
-  <section class="stats-bar">
-    <div class="stats-container">
-      <div class="stat-card">
-        <div class="stat-number">85.0%</div>
-        <div class="stat-label">Efectividad Global Auditada</div>
-        <div class="stat-sub">102 aciertos en 120 partidos en vivo</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Ganador Fijo & Bajas</div>
-        <div class="stat-sub">5/5 en Fijos | 16/16 en Bajas de Goles</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">6</div>
-        <div class="stat-label">Grandes Ligas Europeas</div>
-        <div class="stat-sub">Premier, LaLiga, Serie A, Bundesliga, Ligue 1, Portugal</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">xG + IA</div>
-        <div class="stat-label">Modelo Predictivo Propio</div>
-        <div class="stat-sub">Ventana histórica de 5 juegos y factores de localía</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS & SHOWCASE -->
-  <section class="section" id="algoritmo">
-    <div class="section-header">
-      <span class="section-tag">TECNOLOGÍA & LÓGICA DE DECANTACIÓN</span>
-      <h2 class="section-title">Cómo Selecciona Typhi las Jugadas del Día</h2>
-      <p class="section-desc">
-        El motor evalúa toda la cartelera de las 6 ligas europeas y decanta las oportunidades siguiendo una jerarquía estricta: 
-        <strong>Fijo &gt; Doble Oportunidad &gt; Altas &gt; Bajas</strong>.
-      </p>
-    </div>
-
-    <!-- SHOWCASE CARD MOCKUP -->
-    <div class="showcase-wrapper" id="fijos">
-      <div class="showcase-header">
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="site-width hero-grid">
         <div>
-          <h3 style="font-size: 1.3rem; font-weight: 800;">🔥 DEMOSTRACIÓN: JUGADAS SELECCIONADAS DEL DÍA</h3>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">Decantación Cuantitativa: Opción 1, Opción 2 y Opción 3 (Trío de Oro)</p>
-        </div>
-        <div class="showcase-status">
-          <div class="pulse-dot"></div>
-          Rutina Pre-Match Diaria (09:30 AM)
-        </div>
-      </div>
-
-      <div class="match-grid" id="parlay">
-        <!-- Card 1: Fijo #1 -->
-        <div class="match-card featured">
-          <div class="match-badge badge-fijo">Pata 1 • Fijo #1 (Opción 1)</div>
-          <div class="match-league">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</div>
-          <div class="match-teams">Manchester City vs Wolves</div>
-          <div class="pick-box">
-            <div class="pick-label">Recomendación Oficial:</div>
-            <div class="pick-val">Gana Manchester City (Fijo)</div>
+          <span class="eyebrow">IA · Datos · Fútbol europeo</span>
+          <h1 id="hero-title">Fútbol en números. <span class="accent">Decisiones con ventaja matemática.</span> Cero corazonadas.</h1>
+          <p class="hero-copy">Un modelo cuantitativo analiza goles proyectados, localía y rendimiento reciente en las 6 grandes ligas de Europa. Cada pronóstico queda registrado antes del partido y se contrasta con el resultado oficial.</p>
+          <div class="hero-actions">
+            <a class="btn btn-green" href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">Unirme al canal gratis ↗</a>
+            <a class="btn btn-outline" href="#auditoria">Ver auditoría real →</a>
           </div>
-          <div class="match-meta">
-            <span>Probabilidad: <strong>92.5%</strong></span>
-            <span>xG Proyectado: <strong>3.8 vs 0.6</strong></span>
+          <div class="trust-row" aria-label="Principios">
+            <span>1 sola jugada por partido</span><span>Registro previo al inicio</span><span>Fallos publicados también</span>
           </div>
         </div>
 
-        <!-- Card 2: Fijo #2 -->
-        <div class="match-card featured">
-          <div class="match-badge badge-fijo">Pata 2 • Fijo #2 (Opción 2)</div>
-          <div class="match-league">🇪🇸 LaLiga Española</div>
-          <div class="match-teams">Real Madrid vs Rayo Vallecano</div>
-          <div class="pick-box">
-            <div class="pick-label">Recomendación Oficial:</div>
-            <div class="pick-val">Gana Real Madrid (Fijo)</div>
+        <!-- Panel alimentado con la jugada #1 real (data.js) -->
+        <div class="visual-shell" aria-live="polite">
+          <div class="visual-top">
+            <span>● PANEL DE ANÁLISIS</span><span><i class="live-dot"></i><span id="hero-fecha">Próxima jornada</span></span>
           </div>
-          <div class="match-meta">
-            <span>Probabilidad: <strong>91.0%</strong></span>
-            <span>xG Proyectado: <strong>3.2 vs 0.7</strong></span>
+          <div class="visual-match">
+            <small id="hero-liga">—</small>
+            <strong id="hero-partido">Cargando datos del modelo…</strong>
           </div>
-        </div>
-
-        <!-- Card 3: Pata 3 Parlay -->
-        <div class="match-card">
-          <div class="match-badge badge-trio">Pata 3 • Trío de Oro (Opción 3)</div>
-          <div class="match-league">🇮🇹 Serie A Italiana</div>
-          <div class="match-teams">Inter Milán vs Genoa</div>
-          <div class="pick-box">
-            <div class="pick-label">Recomendación Oficial:</div>
-            <div class="pick-val">Más de 1 (+1.5 Goles)</div>
+          <div class="visual-main">
+            <div class="visual-tile">
+              <small>Goles proyectados</small>
+              <strong class="visual-number" id="hero-goles">—</strong>
+              <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <p>Local vs visitante, según el modelo</p>
+            </div>
+            <div class="visual-tile">
+              <small>Jugada recomendada</small>
+              <strong class="visual-number" id="hero-tipo" style="font-size: clamp(1.4rem, 2.6vw, 2rem);">—</strong>
+              <span class="probability" id="hero-prob">— estimado</span>
+              <p id="hero-jugada">—</p>
+            </div>
           </div>
-          <div class="match-meta">
-            <span>Probabilidad: <strong>82.0%</strong></span>
-            <span>xG Total: <strong>3.7 goles</strong></span>
-          </div>
+          <div class="visual-foot">⚑ &nbsp; Probabilidad estimada por el modelo. Una probabilidad alta no es una certeza.</div>
         </div>
       </div>
+    </section>
 
-      <div class="showcase-footer">
-        <div>
-          <div class="prob-combined-title">🎯 Probabilidad Matemática Acumulada del Trío (P₁ × P₂ × P₃):</div>
-          <div class="prob-combined-val">69.0% de Certeza Proyectada</div>
+    <!-- ESTADÍSTICAS REALES -->
+    <section class="stats" aria-label="Rendimiento auditado">
+      <div class="site-width">
+        <div class="stats-grid">
+          <div class="stat"><strong id="st-pct">—</strong><b>Efectividad auditada</b><small id="st-pct-sub">—</small></div>
+          <div class="stat"><strong id="st-fijo">—</strong><b>Ganador fijo</b><small id="st-fijo-sub">—</small></div>
+          <div class="stat"><strong id="st-baja">—</strong><b>Bajas de goles</b><small id="st-baja-sub">—</small></div>
+          <div class="stat"><strong>6</strong><b>Ligas europeas</b><small>Premier, LaLiga, Serie A, Bundesliga, Ligue 1 y Portugal</small></div>
         </div>
-        <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" class="btn btn-whatsapp">
-          Recibir estas jugadas gratis en WhatsApp ➔
-        </a>
+        <div class="league-strip" id="league-strip"></div>
+        <p class="stats-note" id="stats-note">—</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VERIFIED RESULTS (AUDIT SECTION) -->
-  <section class="section" id="auditoria" style="padding-top: 20px;">
-    <div class="section-header">
-      <span class="section-tag">TRANSPARENCIA INMUTABLE</span>
-      <h2 class="section-title">Auditoría Pública: Resultados Verificados</h2>
-      <p class="section-desc">
-        En Typhi Analytics nada se borra ni se modifica. Cada pronóstico queda congelado en la base de datos PostgreSQL antes de empezar el partido y se resuelve automáticamente con el marcador final oficial.
-      </p>
-    </div>
-
-    <div class="table-wrapper">
-      <table class="results-table">
-        <thead>
-          <tr>
-            <th>Liga</th>
-            <th>Partido</th>
-            <th>Pronóstico Oficial</th>
-            <th>Marcador Final</th>
-            <th>Resultado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</td>
-            <td><strong>Arsenal vs Everton</strong></td>
-            <td>Gana Arsenal (Fijo)</td>
-            <td>2 - 0</td>
-            <td><span class="tag-win">✅ COBRADA</span></td>
-          </tr>
-          <tr>
-            <td>🇮🇹 Serie A</td>
-            <td><strong>Juventus vs Torino</strong></td>
-            <td>Gana Juventus (Fijo)</td>
-            <td>1 - 0</td>
-            <td><span class="tag-win">✅ COBRADA</span></td>
-          </tr>
-          <tr>
-            <td>🇫🇷 Ligue 1</td>
-            <td><strong>Paris SG vs Rennes</strong></td>
-            <td>Más de 2 (+2.5 Goles)</td>
-            <td>3 - 1</td>
-            <td><span class="tag-win">✅ COBRADA</span></td>
-          </tr>
-          <tr>
-            <td>🇵🇹 Primeira Liga</td>
-            <td><strong>Sporting CP vs Braga</strong></td>
-            <td>Gana Sporting CP (Fijo)</td>
-            <td>2 - 0</td>
-            <td><span class="tag-win">✅ COBRADA</span></td>
-          </tr>
-          <tr>
-            <td>🇩🇪 Bundesliga</td>
-            <td><strong>Bayern Múnich vs Augsburg</strong></td>
-            <td>Gana Bayern Múnich (Fijo)</td>
-            <td>3 - 0</td>
-            <td><span class="tag-win">✅ COBRADA</span></td>
-          </tr>
-          <tr>
-            <td>🇪🇸 LaLiga</td>
-            <td><strong>Barcelona vs Valencia</strong></td>
-            <td>Gana o empata Barcelona</td>
-            <td>1 - 1</td>
-            <td><span class="tag-win">✅ COBRADA</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="audit-seal">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-        Registro congelado en PostgreSQL con timestamp UTC pre-partido. Efectividad auditada en vivo: <strong>85.0% de aciertos</strong>.
+    <!-- METODOLOGÍA -->
+    <section class="section" id="metodologia" aria-labelledby="method-title">
+      <div class="site-width">
+        <div class="section-heading">
+          <span class="eyebrow">Nuestra metodología</span>
+          <h2 id="method-title">Tecnología, datos y criterio en cada decisión</h2>
+          <p>Un proceso claro para analizar encuentros sin confundir probabilidades con certezas.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method-card"><span class="icon-box" aria-hidden="true">◈</span><h3>Análisis cuantitativo</h3><p>Promedios de los últimos 5 partidos como local y visitante: goles anotados y recibidos.</p></article>
+          <article class="method-card"><span class="icon-box" aria-hidden="true">◎</span><h3>Contexto de la tabla</h3><p>La posición en la clasificación y la localía ajustan los goles proyectados de cada equipo.</p></article>
+          <article class="method-card"><span class="icon-box" aria-hidden="true">⌁</span><h3>Decantación por prioridad</h3><p>De cada partido se elige una sola jugada: la de mayor solidez según una jerarquía fija.</p></article>
+          <article class="method-card"><span class="icon-box" aria-hidden="true">◇</span><h3>Auditoría pública</h3><p>Los pronósticos se congelan antes del inicio y se resuelven solos con el marcador oficial.</p></article>
+        </div>
+        <div class="priority" aria-label="Orden de prioridad">
+          Orden de prioridad: <span>1 · Fijo</span> → <span>2 · Gana o empata</span> → <span>3 · Altas</span> → <span>4 · Bajas</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 3 GOLDEN RULES -->
-  <section class="section" id="reglas">
-    <div class="section-header">
-      <span class="section-tag">EL MANIFIESTO TYPHI</span>
-      <h2 class="section-title">Nuestras 3 Reglas de Oro</h2>
-      <p class="section-desc">
-        La razón por la que Typhi Analytics es un software científico de inversión cuantitativa y no un canal informal de apuestas.
-      </p>
-    </div>
-
-    <div class="rules-grid">
-      <div class="rule-card">
-        <div class="rule-icon">🤖</div>
-        <div class="rule-num">Regla 1</div>
-        <h3 class="rule-title">Posicionamiento Cuantitativo</h3>
-        <p class="rule-desc">
-          No creemos en "corazonadas", "datos confidenciales" ni favoritismos de prensa. Cada recomendación surge de ecuaciones de solvencia, xG esperado y probabilidad matemática pura.
-        </p>
+    <!-- JUGADAS REALES -->
+    <section class="section picks-section" id="pronosticos" aria-labelledby="picks-title">
+      <div class="site-width">
+        <div class="section-heading">
+          <span class="eyebrow" id="picks-eyebrow">Jugadas de la próxima jornada</span>
+          <h2 id="picks-title">Los 2 Más Fijos y el Trío de Oro</h2>
+          <p>Las tres mejores opciones del día entre las 6 ligas, una por partido. Las dos primeras son <strong>Los 2 Más Fijos</strong>; junto a la tercera forman el <strong>Trío de Oro</strong>.</p>
+        </div>
+        <div class="pick-grid" id="pick-grid"></div>
+        <div class="combo-bar" id="combo-bar" hidden>
+          <div><small>Probabilidad combinada estimada</small><strong id="combo-text">—</strong></div>
+          <a class="btn btn-green" href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">Recibirlas cada día en WhatsApp ↗</a>
+        </div>
+        <p class="disclosure">Probabilidades estimadas por el modelo de Typhi; no son garantía de resultado. Horarios en tu hora local.</p>
       </div>
+    </section>
 
-      <div class="rule-card">
-        <div class="rule-icon">🛡️</div>
-        <div class="rule-num">Regla 2</div>
-        <h3 class="rule-title">Gestión Estricta de Banca</h3>
-        <p class="rule-desc">
-          Exigimos a nuestros miembros arriesgar únicamente del <strong>2% al 5%</strong> del capital por jornada. La disciplina financiera vence a la varianza natural del fútbol en el mediano y largo plazo.
-        </p>
+    <!-- AUDITORÍA REAL -->
+    <section class="section" id="auditoria" aria-labelledby="audit-title">
+      <div class="site-width">
+        <div class="section-heading">
+          <span class="eyebrow">Transparencia verificable</span>
+          <h2 id="audit-title">Auditoría pública: últimos resultados</h2>
+          <p>Pronóstico registrado antes del partido, marcador final y estado. Mostramos aciertos y fallos tal cual quedaron en la base de datos.</p>
+        </div>
+        <div class="audit-frame" role="region" aria-label="Tabla de últimos resultados; desplázate horizontalmente en móvil" tabindex="0">
+          <table>
+            <thead>
+              <tr><th scope="col">Fecha</th><th scope="col">Liga</th><th scope="col">Partido</th><th scope="col">Pronóstico</th><th scope="col">Final</th><th scope="col">Estado</th></tr>
+            </thead>
+            <tbody id="audit-body">
+              <tr><td colspan="6">Cargando resultados…</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="disclosure" id="audit-note">Fuente de marcadores: football-data.org.</p>
       </div>
+    </section>
 
-      <div class="rule-card">
-        <div class="rule-icon">🔒</div>
-        <div class="rule-num">Regla 3</div>
-        <h3 class="rule-title">Auditoría y Verdad</h3>
-        <p class="rule-desc">
-          Los pronósticos se congelan en la base de datos antes del inicio y se resuelven en automático. No editamos publicaciones ni borramos fallos: la verdad matemática es nuestro activo más valioso.
-        </p>
+    <!-- REGLAS -->
+    <section class="section rules-section" id="reglas" aria-labelledby="rules-title">
+      <div class="site-width">
+        <div class="section-heading">
+          <span class="eyebrow">El manifiesto Typhi</span>
+          <h2 id="rules-title">Nuestras 3 reglas de oro</h2>
+          <p>La razón por encima del ruido. Los números informan; nunca eliminan la incertidumbre.</p>
+        </div>
+        <div class="rules-grid">
+          <article class="rule-card"><span class="icon-box" aria-hidden="true">①</span><div class="rule-index">REGLA 01</div><h3>Posicionamiento cuantitativo</h3><p>Somos software de análisis, no un tipster. Contextualizamos probabilidades con datos y reconocemos los márgenes de error.</p></article>
+          <article class="rule-card"><span class="icon-box" aria-hidden="true">②</span><div class="rule-index">REGLA 02</div><h3>Gestión estricta de banca</h3><p>Si decides jugar, arriesga solo del 2% al 5% de tu banca por jornada y nunca dinero que necesites.</p></article>
+          <article class="rule-card"><span class="icon-box" aria-hidden="true">③</span><div class="rule-index">REGLA 03</div><h3>Auditoría y verdad</h3><p>Cada predicción se registra antes del partido y se contrasta con el resultado oficial. No borramos fallos.</p></article>
+        </div>
+        <div class="cta-band">
+          <div><h3>¿Te interesa el fútbol detrás de los números?</h3><p>Recibe gratis Los 2 Más Fijos y el recap verificado en nuestro canal oficial.</p></div>
+          <a class="btn btn-green" href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">Unirme al Canal de WhatsApp ↗</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VIP CLUB & LEAD FORM (Paso 3.3 & Paso 5.3) -->
-  <section class="section" id="vip">
-    <div class="vip-card">
+    <!-- CLUB VIP -->
+    <section class="section" id="vip" aria-labelledby="vip-title">
+      <div class="site-width">
+        <div class="vip-card">
+          <div>
+            <span class="eyebrow">Acceso premium</span>
+            <h2 id="vip-title">Club VIP de Typhi Soccer</h2>
+            <p class="muted">El informe cuantitativo completo cada mañana, antes de los partidos.</p>
+            <ul class="vip-list">
+              <li>Reporte diario en PDF con comentario del modelo</li>
+              <li>Parlay Estratégico de 4 piernas</li>
+              <li>Top 3 jugadas por cada liga</li>
+              <li>Guía de gestión de banca</li>
+            </ul>
+            <div class="price"><strong>$19</strong><span>USD / mes · sin permanencia</span></div>
+          </div>
+          <div class="vip-form">
+            <form id="vip-form" action="https://formsubmit.co/vip.typhianalytics@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Nueva solicitud VIP — Typhi Analytics">
+              <input type="hidden" name="_template" value="table">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+              <h3>Solicitar acceso</h3>
+              <p>Te enviaremos los datos de activación y métodos de pago (PayPal, transferencia o USDT).</p>
+              <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" type="text" required autocomplete="name"></div>
+              <div class="field"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+              <div class="field"><label for="f-pais">WhatsApp / País (opcional)</label><input id="f-pais" name="whatsapp_pais" type="text"></div>
+              <button class="btn btn-gold" type="submit">Solicitar acceso VIP →</button>
+              <p class="form-note">Tus datos son privados y no se comparten con terceros.</p>
+            </form>
+            <div class="form-ok" id="form-ok">
+              <h3>¡Solicitud recibida!</h3>
+              <p class="muted">Te escribiremos a tu correo. Mientras tanto, únete al canal gratuito:</p>
+              <a class="btn btn-green" href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">Ir al Canal de WhatsApp ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-width footer-inner">
       <div>
-        <span class="section-tag">ACCESO PREMIUM EXCLUSIVO</span>
-        <h2 style="font-size: 2.3rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px;">
-          Únete al Club VIP de Typhi Soccer
-        </h2>
-        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6;">
-          Accede al informe diario cuantitativo completo en PDF cada mañana a las 10:00 AM, directamente en tu grupo privado o correo.
-        </p>
-
-        <ul class="vip-benefits">
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <strong>Reporte Diario VIP en PDF</strong> con comentarios cuantitativos de IA.
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <strong>El Parlay Estratégico Diario</strong> (4 piernas optimizadas, cuota ~3.50).
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <strong>Top 3 Jugadas por Liga</strong> en las 6 competiciones europeas.
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <strong>Guía de Gestión de Banca</strong> para blindar tu capital ante la varianza.
-          </li>
-        </ul>
-
-        <div class="vip-price-tag">
-          <span class="price-currency">$</span>
-          <span class="price-val">19</span>
-          <span class="price-period">USD / mes (Membresía Fútbol 6 Ligas)</span>
-        </div>
-        <p style="font-size: 0.8rem; color: var(--text-dim);">Sin contratos de permanencia. Cancela cuando quieras.</p>
+        <span class="brand-name">TYPHI <em>ANALYTICS</em></span>
+        <div class="footer-note">Software de análisis cuantitativo de fútbol con fines informativos. Ninguna estimación garantiza resultados. Si decides jugar, hazlo con responsabilidad y solo si eres mayor de edad.</div>
+        <div class="footer-note" id="footer-update"></div>
       </div>
-
-      <!-- LEAD CAPTURE FORM (Connected to Formsubmit a costo $0) -->
-      <div class="vip-form">
-        <h3 class="form-title">Solicitar Acceso al Club VIP</h3>
-        <p class="form-subtitle">Déjanos tus datos y te enviaremos la información de activación y métodos de pago (PayPal, Zelle, Transferencia o USDT).</p>
-
-        <form id="vip-lead-form" action="https://formsubmit.co/vip.typhianalytics@gmail.com" method="POST">
-          <!-- Formsubmit settings -->
-          <input type="hidden" name="_subject" value="⚽ Nueva Solicitud de Membresía VIP — Typhi Analytics">
-          <input type="hidden" name="_captcha" value="false">
-
-          <div class="form-group">
-            <label for="lead-name">Nombre y Apellido</label>
-            <input type="text" id="lead-name" name="nombre" class="form-input" placeholder="Ej: Carlos Silva" required>
-          </div>
-
-          <div class="form-group">
-            <label for="lead-email">Correo Electrónico</label>
-            <input type="email" id="lead-email" name="email" class="form-input" placeholder="tucorreo@gmail.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="lead-phone">WhatsApp / País (Opcional)</label>
-            <input type="text" id="lead-phone" name="whatsapp" class="form-input" placeholder="+34 600... / España">
-          </div>
-
-          <button type="submit" class="btn-submit">
-            Solicitar Acceso VIP ➔
-          </button>
-
-          <p class="form-guarantee">🔒 Tus datos son 100% privados y no se comparten con terceros.</p>
-        </form>
-
-        <div id="form-success-message" style="display: none; text-align: center; padding: 20px 0;">
-          <div style="font-size: 2.5rem; margin-bottom: 10px;">🎉</div>
-          <h4 style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 8px;">¡Solicitud Recibida con Éxito!</h4>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
-            Te hemos enviado los datos de activación a tu correo. También puedes unirte directamente a nuestro canal de WhatsApp gratuito mientras procesamos tu acceso:
-          </p>
-          <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
-            Ir al Canal de WhatsApp
-          </a>
-        </div>
+      <div class="footer-links">
+        <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://instagram.com/typhi_analytics" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:vip.typhianalytics@gmail.com">Contacto</a>
+        <a class="back-link" href="#inicio">Volver arriba ↑</a>
       </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq" style="padding-top: 10px;">
-    <div class="section-header">
-      <span class="section-tag">DUDAS RESUELTAS</span>
-      <h2 class="section-title">Preguntas Frecuentes</h2>
-    </div>
-
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h4 class="faq-question">¿Qué ligas de fútbol analiza el software?</h4>
-        <p class="faq-answer">
-          Actualmente nuestro algoritmo cubre al 100% las 6 Grandes Ligas de Europa: Premier League (Inglaterra), LaLiga (España), Serie A (Italia), Bundesliga (Alemania), Ligue 1 (Francia) y Primeira Liga (Portugal). Próximamente se integrarán torneos continentales UEFA (Champions y Nations League).
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h4 class="faq-question">¿Cómo sé que los pronósticos son reales y no editados?</h4>
-        <p class="faq-answer">
-          Cada pronóstico queda registrado y congelado con fecha/hora UTC en nuestra base de datos PostgreSQL antes de que comience el partido. Al terminar la jornada, los marcadores oficiales de la API resuelven las jugadas sin intervención humana.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h4 class="faq-question">¿Qué diferencia a Typhi de un "tipster"?</h4>
-        <p class="faq-answer">
-          Los tipsters operan con corazonadas o impulsos emocionales. Typhi Analytics es un software desarrollado con Python y modelos matemáticos de xG que solo emite selecciones cuando existe una ventaja estadística demostrable y exige estricta gestión de banca.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h4 class="faq-question">¿Qué métodos de pago aceptan para el Club VIP?</h4>
-        <p class="faq-answer">
-          Aceptamos pagos internacionales vía PayPal, transferencias bancarias locales (Zelle, Bizum o según tu país) y criptomonedas (USDT vía Binance). Al llenar el formulario recibirás los datos directos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-          <img src="assets/typhi_logo_transparent.png" alt="Logo" style="height: 38px;">
-          <span style="font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px;">TYPHI <span style="color: var(--accent-gold);">ANALYTICS</span></span>
-        </div>
-        <p class="footer-desc">
-          Software cuantitativo de inteligencia artificial y análisis de datos estadísticos para el fútbol profesional europeo.
-        </p>
-        <a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" class="btn btn-whatsapp" style="font-size: 0.85rem; padding: 8px 16px;">
-          Canal Oficial de WhatsApp
-        </a>
-      </div>
-
-      <div>
-        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 14px; color: var(--text-main);">Navegación</h4>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
-          <li><a href="#algoritmo" style="color: var(--text-muted); text-decoration: none;">El Algoritmo</a></li>
-          <li><a href="#fijos" style="color: var(--text-muted); text-decoration: none;">Los 2 Más Fijos</a></li>
-          <li><a href="#parlay" style="color: var(--text-muted); text-decoration: none;">Trío de Oro</a></li>
-          <li><a href="#auditoria" style="color: var(--text-muted); text-decoration: none;">Auditoría Pública</a></li>
-          <li><a href="#vip" style="color: var(--text-muted); text-decoration: none;">Membresía VIP</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 14px; color: var(--text-main);">Canales Oficiales</h4>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
-          <li><a href="https://instagram.com/typhi_analytics" target="_blank" style="color: var(--text-muted); text-decoration: none;">📸 Instagram: @typhi_analytics</a></li>
-          <li><a href="https://whatsapp.com/channel/0029Vb91PPV2phHUNVVXHM22" target="_blank" style="color: var(--text-muted); text-decoration: none;">💬 WhatsApp: Canal Oficial</a></li>
-          <li><a href="mailto:vip.typhianalytics@gmail.com" style="color: var(--text-muted); text-decoration: none;">✉️ Soporte: vip.typhianalytics@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-disclaimer">
-      <p style="margin-bottom: 8px;">
-        © <span id="current-year">2026</span> Typhi Analytics AI. Todos los derechos reservados.
-      </p>
-      <p>
-        <strong>Aviso de Responsabilidad:</strong> Typhi Analytics es una herramienta de análisis estadístico cuantitativo y probabilístico con fines informativos y recreativos. No somos una casa de apuestas ni incentivamos el juego desordenado. Exigimos estricta gestión de banca (2% a 5%) a todos los usuarios.
-      </p>
     </div>
   </footer>
 
-  <!-- App Script -->
+  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
