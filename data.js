@@ -1,6 +1,6 @@
 // Archivo generado automaticamente por exportar_landing.py. No editar a mano.
 window.TYPHI_DATA = {
-  "generado": "18/11/2026 08:52",
+  "generado": "20/11/2026 09:27",
   "estadisticas": {
     "global": {
       "jugadas": 120,
