@@ -1,21 +1,21 @@
 // Archivo generado automaticamente por exportar_landing.py. No editar a mano.
 window.TYPHI_DATA = {
-  "generado": "20/11/2026 09:27",
+  "generado": "21/11/2026 07:31",
   "estadisticas": {
     "global": {
-      "jugadas": 120,
-      "aciertos": 102,
-      "pct": 85.0
+      "jugadas": 123,
+      "aciertos": 104,
+      "pct": 84.6
     },
     "por_tipo": {
       "Alta": {
-        "jugadas": 84,
-        "aciertos": 67,
-        "pct": 79.8
+        "jugadas": 85,
+        "aciertos": 68,
+        "pct": 80.0
       },
       "Baja": {
-        "jugadas": 16,
-        "aciertos": 16,
+        "jugadas": 17,
+        "aciertos": 17,
         "pct": 100.0
       },
       "Doble oportunidad": {
@@ -24,17 +24,17 @@ window.TYPHI_DATA = {
         "pct": 93.3
       },
       "Fijo": {
-        "jugadas": 5,
+        "jugadas": 6,
         "aciertos": 5,
-        "pct": 100.0
+        "pct": 83.3
       }
     },
     "por_liga": [
       {
         "liga": "Ligue 1",
-        "jugadas": 18,
-        "aciertos": 17,
-        "pct": 94.4
+        "jugadas": 19,
+        "aciertos": 18,
+        "pct": 94.7
       },
       {
         "liga": "Premier League",
@@ -43,73 +43,97 @@ window.TYPHI_DATA = {
         "pct": 90.0
       },
       {
+        "liga": "La Liga",
+        "jugadas": 21,
+        "aciertos": 18,
+        "pct": 85.7
+      },
+      {
         "liga": "Serie A",
         "jugadas": 27,
         "aciertos": 23,
         "pct": 85.2
       },
       {
-        "liga": "La Liga",
-        "jugadas": 20,
-        "aciertos": 17,
-        "pct": 85.0
-      },
-      {
-        "liga": "Bundesliga",
-        "jugadas": 18,
-        "aciertos": 14,
-        "pct": 77.8
-      },
-      {
         "liga": "Primeira Liga",
         "jugadas": 17,
         "aciertos": 13,
         "pct": 76.5
+      },
+      {
+        "liga": "Bundesliga",
+        "jugadas": 19,
+        "aciertos": 14,
+        "pct": 73.7
       }
     ],
     "desde": "28/10/2026"
   },
   "proxima": {
-    "fecha": "2026-11-20",
+    "fecha": "2026-11-21",
     "jugadas": [
       {
         "rol": "Los 2 Más Fijos · #1",
-        "liga": "Bundesliga",
-        "partido": "FC Bayern München vs 1. FC Köln",
-        "tipo": "Fijo",
-        "jugada": "Gana FC Bayern München",
-        "probabilidad": 86.8,
-        "xg_local": 5.1,
-        "xg_visita": 1.0,
-        "kickoff": "2026-11-20T19:30:00Z"
+        "liga": "Ligue 1",
+        "partido": "AS Monaco FC vs AJ Auxerre",
+        "tipo": "Doble oportunidad",
+        "jugada": "Gana o empata AS Monaco FC",
+        "probabilidad": 80.4,
+        "xg_local": 4.4,
+        "xg_visita": 1.3,
+        "kickoff": "2026-11-21T19:45:00Z"
       },
       {
         "rol": "Los 2 Más Fijos · #2",
         "liga": "La Liga",
-        "partido": "Athletic Club vs RCD Espanyol de Barcelona",
-        "tipo": "Alta",
-        "jugada": "Uno o más (+0.5)",
-        "probabilidad": 85.0,
-        "xg_local": 2.3,
-        "xg_visita": 0.8,
-        "kickoff": "2026-11-20T20:00:00Z"
+        "partido": "Real Madrid CF vs RC Celta de Vigo",
+        "tipo": "Doble oportunidad",
+        "jugada": "Gana o empata Real Madrid CF",
+        "probabilidad": 80.4,
+        "xg_local": 3.7,
+        "xg_visita": 0.6,
+        "kickoff": "2026-11-21T20:00:00Z"
       },
       {
         "rol": "Trío de Oro · Pata 3",
-        "liga": "Ligue 1",
-        "partido": "ES Troyes AC vs Le Havre AC",
-        "tipo": "Baja",
-        "jugada": "Menos de 5 (-4.5)",
-        "probabilidad": 81.8,
-        "xg_local": 1.8,
-        "xg_visita": 1.2,
-        "kickoff": "2026-11-20T19:45:00Z"
+        "liga": "Premier League",
+        "partido": "Aston Villa FC vs Sunderland AFC",
+        "tipo": "Doble oportunidad",
+        "jugada": "Gana o empata Aston Villa FC",
+        "probabilidad": 80.0,
+        "xg_local": 3.4,
+        "xg_visita": 0.4,
+        "kickoff": "2026-11-21T15:00:00Z"
       }
     ],
-    "prob_dos_fijos": 73.8,
-    "prob_trio": 60.4
+    "prob_dos_fijos": 64.6,
+    "prob_trio": 51.7
   },
   "auditoria": [
+    {
+      "fecha": "20/11/2026",
+      "liga": "Bundesliga",
+      "partido": "FC Bayern München vs 1. FC Köln",
+      "jugada": "Gana FC Bayern München",
+      "marcador": "1–1",
+      "resultado": "LOSS"
+    },
+    {
+      "fecha": "20/11/2026",
+      "liga": "Ligue 1",
+      "partido": "ES Troyes AC vs Le Havre AC",
+      "jugada": "Menos de 5 (-4.5)",
+      "marcador": "3–1",
+      "resultado": "WIN"
+    },
+    {
+      "fecha": "20/11/2026",
+      "liga": "La Liga",
+      "partido": "Athletic Club vs RCD Espanyol de Barcelona",
+      "jugada": "Uno o más (+0.5)",
+      "marcador": "0–1",
+      "resultado": "WIN"
+    },
     {
       "fecha": "08/11/2026",
       "liga": "La Liga",
@@ -181,30 +205,6 @@ window.TYPHI_DATA = {
       "jugada": "Más de 1 (+1.5)",
       "marcador": "0–1",
       "resultado": "LOSS"
-    },
-    {
-      "fecha": "08/11/2026",
-      "liga": "Ligue 1",
-      "partido": "Stade Brestois 29 vs Olympique Lyonnais",
-      "jugada": "Más de 1 (+1.5)",
-      "marcador": "2–0",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "08/11/2026",
-      "liga": "Ligue 1",
-      "partido": "Racing Club de Lens vs Olympique de Marseille",
-      "jugada": "Más de 1 (+1.5)",
-      "marcador": "1–2",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "08/11/2026",
-      "liga": "Ligue 1",
-      "partido": "Angers SCO vs OGC Nice",
-      "jugada": "Más de 1 (+1.5)",
-      "marcador": "0–2",
-      "resultado": "WIN"
     }
   ]
 };
