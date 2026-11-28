@@ -1,22 +1,22 @@
 // Archivo generado automaticamente por exportar_landing.py. No editar a mano.
 window.TYPHI_DATA = {
-  "generado": "27/11/2026 09:26",
+  "generado": "27/11/2026 21:43",
   "estadisticas": {
     "global": {
-      "jugadas": 168,
-      "aciertos": 140,
-      "pct": 83.3
+      "jugadas": 174,
+      "aciertos": 142,
+      "pct": 81.6
     },
     "por_tipo": {
       "Alta": {
-        "jugadas": 117,
-        "aciertos": 93,
-        "pct": 79.5
+        "jugadas": 121,
+        "aciertos": 95,
+        "pct": 78.5
       },
       "Baja": {
-        "jugadas": 21,
+        "jugadas": 22,
         "aciertos": 20,
-        "pct": 95.2
+        "pct": 90.9
       },
       "Doble oportunidad": {
         "jugadas": 23,
@@ -24,92 +24,140 @@ window.TYPHI_DATA = {
         "pct": 91.3
       },
       "Fijo": {
-        "jugadas": 7,
+        "jugadas": 8,
         "aciertos": 6,
-        "pct": 85.7
+        "pct": 75.0
       }
     },
     "por_liga": [
       {
         "liga": "La Liga",
-        "jugadas": 30,
-        "aciertos": 27,
-        "pct": 90.0
+        "jugadas": 31,
+        "aciertos": 28,
+        "pct": 90.3
       },
       {
         "liga": "Premier League",
-        "jugadas": 30,
+        "jugadas": 31,
         "aciertos": 27,
-        "pct": 90.0
+        "pct": 87.1
       },
       {
         "liga": "Serie A",
-        "jugadas": 37,
+        "jugadas": 38,
         "aciertos": 32,
-        "pct": 86.5
+        "pct": 84.2
       },
       {
         "liga": "Ligue 1",
-        "jugadas": 27,
+        "jugadas": 28,
         "aciertos": 23,
-        "pct": 85.2
+        "pct": 82.1
       },
       {
         "liga": "Primeira Liga",
-        "jugadas": 17,
-        "aciertos": 13,
-        "pct": 76.5
+        "jugadas": 18,
+        "aciertos": 14,
+        "pct": 77.8
       },
       {
         "liga": "Bundesliga",
-        "jugadas": 27,
+        "jugadas": 28,
         "aciertos": 18,
-        "pct": 66.7
+        "pct": 64.3
       }
     ],
     "desde": "28/10/2026"
   },
   "proxima": {
-    "fecha": "2026-11-27",
+    "fecha": "2026-11-28",
     "jugadas": [
       {
         "rol": "Los 2 Más Fijos · #1",
-        "liga": "Bundesliga",
-        "partido": "SV Werder Bremen vs Borussia Mönchengladbach",
+        "liga": "Primeira Liga",
+        "partido": "FC Arouca vs Rio Ave FC",
         "tipo": "Fijo",
-        "jugada": "Gana SV Werder Bremen",
-        "probabilidad": 85.9,
-        "xg_local": 3.8,
-        "xg_visita": 0.0,
-        "kickoff": "2026-11-27T19:30:00Z"
+        "jugada": "Gana FC Arouca",
+        "probabilidad": 85.6,
+        "xg_local": 3.3,
+        "xg_visita": -0.4,
+        "kickoff": "2026-11-28T15:30:00Z"
       },
       {
         "rol": "Los 2 Más Fijos · #2",
         "liga": "La Liga",
-        "partido": "Levante UD vs Real Racing Club de Santander",
-        "tipo": "Alta",
-        "jugada": "Más de 2 (+2.5)",
-        "probabilidad": 88.0,
-        "xg_local": 3.7,
-        "xg_visita": 2.8,
-        "kickoff": "2026-11-27T20:00:00Z"
+        "partido": "Real Betis Balompié vs Rayo Vallecano de Madrid",
+        "tipo": "Doble oportunidad",
+        "jugada": "Gana o empata Real Betis Balompié",
+        "probabilidad": 81.6,
+        "xg_local": 4.0,
+        "xg_visita": 0.6,
+        "kickoff": "2026-11-28T13:00:00Z"
       },
       {
         "rol": "Trío de Oro · Pata 3",
-        "liga": "Ligue 1",
-        "partido": "Stade Brestois 29 vs Paris FC",
-        "tipo": "Alta",
-        "jugada": "Más de 1 (+1.5)",
-        "probabilidad": 88.0,
-        "xg_local": 2.3,
-        "xg_visita": 2.5,
-        "kickoff": "2026-11-27T19:45:00Z"
+        "liga": "La Liga",
+        "partido": "Elche CF vs Club Atlético de Madrid",
+        "tipo": "Doble oportunidad",
+        "jugada": "Gana o empata Club Atlético de Madrid",
+        "probabilidad": 81.2,
+        "xg_local": 0.0,
+        "xg_visita": 3.3,
+        "kickoff": "2026-11-28T17:30:00Z"
       }
     ],
-    "prob_dos_fijos": 75.6,
-    "prob_trio": 66.5
+    "prob_dos_fijos": 69.8,
+    "prob_trio": 56.7
   },
   "auditoria": [
+    {
+      "fecha": "27/11/2026",
+      "liga": "Premier League",
+      "partido": "Nottingham Forest FC vs Chelsea FC",
+      "jugada": "Menos de 5 (-4.5)",
+      "marcador": "3–2",
+      "resultado": "LOSS"
+    },
+    {
+      "fecha": "27/11/2026",
+      "liga": "Bundesliga",
+      "partido": "SV Werder Bremen vs Borussia Mönchengladbach",
+      "jugada": "Gana SV Werder Bremen",
+      "marcador": "3–3",
+      "resultado": "LOSS"
+    },
+    {
+      "fecha": "27/11/2026",
+      "liga": "Primeira Liga",
+      "partido": "CS Marítimo vs CD Nacional",
+      "jugada": "Uno o más (+0.5)",
+      "marcador": "1–2",
+      "resultado": "WIN"
+    },
+    {
+      "fecha": "27/11/2026",
+      "liga": "Ligue 1",
+      "partido": "Stade Brestois 29 vs Paris FC",
+      "jugada": "Más de 1 (+1.5)",
+      "marcador": "1–0",
+      "resultado": "LOSS"
+    },
+    {
+      "fecha": "27/11/2026",
+      "liga": "Serie A",
+      "partido": "Venezia FC vs Bologna FC 1909",
+      "jugada": "Uno o más (+0.5)",
+      "marcador": "0–0",
+      "resultado": "LOSS"
+    },
+    {
+      "fecha": "27/11/2026",
+      "liga": "La Liga",
+      "partido": "Levante UD vs Real Racing Club de Santander",
+      "jugada": "Más de 2 (+2.5)",
+      "marcador": "1–3",
+      "resultado": "WIN"
+    },
     {
       "fecha": "23/11/2026",
       "liga": "Serie A",
@@ -156,54 +204,6 @@ window.TYPHI_DATA = {
       "partido": "FC Augsburg vs 1. FSV Mainz 05",
       "jugada": "Uno o más (+0.5)",
       "marcador": "3–1",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "22/11/2026",
-      "liga": "Ligue 1",
-      "partido": "Paris FC vs Angers SCO",
-      "jugada": "Gana Paris FC",
-      "marcador": "4–0",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "22/11/2026",
-      "liga": "Ligue 1",
-      "partido": "FC Lorient vs Stade Rennais FC 1901",
-      "jugada": "Más de 2 (+2.5)",
-      "marcador": "1–1",
-      "resultado": "LOSS"
-    },
-    {
-      "fecha": "22/11/2026",
-      "liga": "Serie A",
-      "partido": "US Sassuolo Calcio vs Genoa CFC",
-      "jugada": "Uno o más (+0.5)",
-      "marcador": "0–2",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "22/11/2026",
-      "liga": "Serie A",
-      "partido": "Bologna FC 1909 vs Udinese Calcio",
-      "jugada": "Uno o más (+0.5)",
-      "marcador": "1–1",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "22/11/2026",
-      "liga": "Serie A",
-      "partido": "Juventus FC vs Venezia FC",
-      "jugada": "Gana o empata Juventus FC",
-      "marcador": "4–0",
-      "resultado": "WIN"
-    },
-    {
-      "fecha": "22/11/2026",
-      "liga": "Serie A",
-      "partido": "Atalanta BC vs FC Internazionale Milano",
-      "jugada": "Más de 1 (+1.5)",
-      "marcador": "4–4",
       "resultado": "WIN"
     }
   ]
